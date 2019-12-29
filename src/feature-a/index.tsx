@@ -7,7 +7,6 @@ export const Feature: React.FC = (props: any) => {
   const { match } = props
   const moduleName = config.name
   const [state, dispatch] = useReducer(reducer, {})
-  console.log({ match })
   return (
     <div className="full-height">
       {config.routes.map(route => {
