@@ -1,4 +1,4 @@
-import actions from './actions';
+import actions from './actions'
 
 const { GET_ALL, GET_METADATA } = actions
 
@@ -6,9 +6,9 @@ export default function (
   state: any = {
     entity: {},
     entities: [],
-    metadata: {},
+    metadata: {}
   },
-  action: any,
+  action: any
 ) {
   switch (action.type) {
     case GET_ALL:
@@ -16,13 +16,13 @@ export default function (
         ...state,
         entities: action.payload.data
       }
-      break;
+      break
     case GET_METADATA:
       state = {
         ...state,
         metadata: action.payload.metadata
-      };
-      break;
+      }
+      break
   }
-  return state;
+  return state
 }

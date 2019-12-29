@@ -5,7 +5,7 @@ const apiEndpoint = ''
 const apiRoute = '/'
 
 const actions = keymirror({
-  GLOBAL_ACTION: null,
+  GLOBAL_ACTION: null
 })
 
 const http = wretch(apiEndpoint)

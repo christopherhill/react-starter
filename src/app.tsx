@@ -1,7 +1,7 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import logo from './logo.svg';
-import './app.css';
+import logo from './logo.svg'
+import './app.css'
 import RootRoutes from './root-routes'
 
 // there is no need for redux here with hooks
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <RootRoutes rootState={state} rootDispatch={dispatch} />
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

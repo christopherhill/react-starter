@@ -1,11 +1,11 @@
-import actions from './root-actions';
+import actions from './root-actions'
 
 const { GLOBAL_ACTION } = actions
 
 export default function (
   state: any = {
   },
-  action: any,
+  action: any
 ) {
   switch (action.type) {
     case GLOBAL_ACTION:
@@ -13,7 +13,7 @@ export default function (
         ...state,
         entities: action.payload.data
       }
-      break;
+      break
   }
-  return state;
+  return state
 }

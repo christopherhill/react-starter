@@ -4,7 +4,7 @@ import reducer from './reducer'
 import config from './config'
 
 export const Feature: React.FC = (props: any) => {
-  const { match } = props;
+  const { match } = props
   const moduleName = config.name
   const [state, dispatch] = useReducer(reducer, {})
   console.log({ match })
@@ -13,6 +13,7 @@ export const Feature: React.FC = (props: any) => {
       {config.routes.map(route => {
         const Component = route.component
         return <Route
+          key={route.path}
           path={`${match.url}/${route.path}`}
           component={Component}
           moduleName={moduleName}
@@ -22,7 +23,7 @@ export const Feature: React.FC = (props: any) => {
         />
       })}
     </div>
-  );
+  )
 }
 
 export default Feature

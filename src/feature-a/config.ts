@@ -1,6 +1,6 @@
-import {Create} from './components/create'
-import {Detail} from './components/detail'
-import {Edit} from './components/edit'
+import { Create } from './components/create'
+import { Detail } from './components/detail'
+import { Edit } from './components/edit'
 
 export default {
   name: 'feature-a',
